@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #46070e;
+  color: #FFF;
+  font-weight: 20px;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  text-align: center;
+  align-items: center;
+}
+.contenedor .imagen__logo {
+  height: 165px;
+  margin-left: 30px;
+}
+.contenedor .menu {
+  display: block !important;
+  text-align: justify;
+  margin-right: 80px;
+}
+.contenedor .menu .menu__lista {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 20px;
+}
+.contenedor .menu .menu__lista .menu__lista-link {
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;
+  margin: 10px;
+}
+.contenedor .menu .menu__lista .menu__lista-link:hover {
+  color: #666666;
+}
+.contenedor .menu .menu__lista .menu__lista-link.active {
+  color: #666666;
+}
+
+#nosotros {
+  width: 100%;
+  height: 80%;
+  margin: 50px 5px;
+}
+#nosotros .titulo__principal {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+#nosotros .enfasis {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+#nosotros p {
+  text-align: justify;
+  font-size: 20px;
+  margin: 25px;
+}
+#nosotros .boton__ver {
+  background-color: #3a3636;
+  border-radius: 55%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 44px;
+  width: 80px;
+  margin-top: 10px;
+  color: #FFF;
+  margin-left: 45%;
+}
+#nosotros .boton__ver:hover {
+  background-color: black;
+}
+
+#demonSlayer {
+  width: 100wh;
+  height: 80%;
+  margin: 20px;
+  background-color: #3a3636;
+  padding: 10px;
+}
+#demonSlayer h2 {
+  text-align: center;
+  margin: 30px 20px;
+}
+#demonSlayer form, #demonSlayer fieldset {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#demonSlayer label {
+  font-weight: bold;
+}
+#demonSlayer #buscar {
+  border: 0;
+  height: 25px;
+  width: 80%;
+  border-radius: 10px;
+}
+#demonSlayer #buscar:focus {
+  cursor: auto;
+}
+#demonSlayer .buscar__personaje {
+  background-color: #46070e;
+  border-radius: 55%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 44px;
+  width: 80px;
+  margin-top: 10px;
+  color: #FFF;
+  margin-left: 45%;
+}
+#demonSlayer .buscar__personaje:hover {
+  background-color: black;
+}
+
+#contacto {
+  width: 100%;
+  height: 80%;
+}
+#contacto h2 {
+  text-align: center;
+  margin: 30px 20px;
+}
+#contacto .container {
+  display: inline-block;
+  width: 80%;
+}
+#contacto .tanjiro {
+  width: 180px;
+  height: 200px;
+  margin: -25px;
+}
+#contacto form {
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+#contacto form label {
+  font-size: 20px;
+}
+#contacto form input, #contacto form textarea {
+  border: 0;
+  height: 25px;
+  width: 80%;
+  border-radius: 10px;
+}
+#contacto form textarea {
+  height: 80px;
+}
+#contacto form .boton__enviar {
+  background-color: #3a3636;
+  border-radius: 55%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 44px;
+  width: 80px;
+  margin-top: 10px;
+  color: #FFF;
+}
+#contacto form .boton__enviar:hover {
+  background-color: black;
+}
+
+footer {
+  background: #3a3636;
+  text-align: center;
+  height: 30px;
+}
+footer h3 {
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}/*# sourceMappingURL=estilos.css.map */

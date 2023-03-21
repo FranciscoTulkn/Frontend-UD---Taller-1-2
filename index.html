@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer</title>
+  <!-- Estilos CSS Propios -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="stylesheet" href="CSS/_mixing.css">
+</head>
+<body>
+  <header class="contenedor">
+    <img class="imagen__logo"  src="./assets/image/logoKimetsu.svg" alt="Logo">
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li><a href="#nosotros" class="menu__lista-link active">Nosotros</a></li>
+        <li><a href="#demonSlayer" class="menu__lista-link">Demon Salyer</a></li>
+        <li><a href="#contacto" class="menu__lista-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+
+<!-- ----------- SECCION PARA INFORMAR AL USUARIO ---------------------- -->
+    <section id="nosotros">
+      <h1 class="titulo__principal">Bienvenidos a <span class="enfasis"> Demon Salyer Kimetsu No Yaiba</span> </h1>
+      <br>
+      <p>Queremos darte la bienvenida a esta página especialmente dedicada a todos los <span class="enfasis">FANATICOS</span> de este grandioso anime, aquí encontraras datos curiosos de todos y cada uno de los personajes.</p>
+      <p class>Acompañanos en esta aventura y disfruta de lo que tenemos preparado para <span class="enfasis">TÍ</span>.</p>
+      <button class="boton__ver">Ver más</button>
+    </section>
+
+<!-------------- SECCION PARA BUSCAR EL PERSONAJE - UTILIZANDO FETCH ------------  -->
+    <section id="demonSlayer">
+      <h2>Obten los datos de tu personaje</h2>
+      <form>
+        <fieldset>
+          <label>Busca tu personaje: </label>
+          <input type="text" id="buscar" name="buscar" placeholder="Buscar..."><br>
+          <button class="buscar__personaje">Buscar</button>
+        </fieldset>
+      </form>
+    </section>
+
+<!--------------- SECCION PARA CONTACTAR A LOS USUARIOS -------------------  -->
+
+    <section id="contacto">
+      <h2>Contactanos</h2>
+      <div class="container">
+        <form>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo"><br>
+          <label for="email">Correo Electrónico: </label><br>
+          <input type="email" name="email" id="email" placeholder="Correo electrónico"><br>
+          <label for="telefono">Teléfono</label><br>
+          <input type="tel" name="telefono" id="telefono" placeholder="+57 XXX XXXXXXX"><br>
+          <label for="mensaje">Mensaje</label><br>
+          <textarea name="mensaje" id="mensaje" placeholder="mensaje" col="30" row="30"></textarea>
+          <br>
+          <button class="boton__enviar">Enviar</button>
+        </form>  
+      </div>
+      <img class="tanjiro" src="./assets/image/tanjiroChibi.png" alt="Tanjiro Chibi">
+    </section>
+  </article>
+
+  <footer>
+    <h3>Derechos Reservados &copy 2023 Francisco Tulcán</h3>
+  </footer>
+  
+</body>
+  <script src="./script.js"></script>
+</html>

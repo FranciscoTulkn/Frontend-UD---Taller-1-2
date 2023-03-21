@@ -1,0 +1,218 @@
+// ROOTs
+$font-family: 'Roboto', sans-serif;
+$color-fuente: #FFF;
+$color-fondo: #46070e;
+$tamano-fuente: 20px;
+
+// MIXINGS
+@mixin enfasis ($tamano-fuente) {
+  color: black;
+  font-weight: bold;
+  font-size: $tamano-fuente;
+}
+
+@mixin boton ($color, $border-radius){
+  background-color: $color;
+  border-radius: 55%;
+  border: $border-radius solid transparent;
+  cursor: pointer;
+  height: 44px;
+  width: 80px;
+  margin-top: 10px;
+  color: $color-fuente;
+
+  &:hover {
+    background-color: darken($color, 30%);
+  }
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-fondo;
+  color: $color-fuente;
+  font-weight: $tamano-fuente;
+}
+
+// ESTILOS DEL HEADER
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  text-align: center;
+  align-items: center;
+
+  .imagen__logo{
+    height: 165px;
+    margin-left: 30px;
+  }
+
+  .menu {
+    display: block !important;
+    text-align: justify;
+    margin-right: 80px;
+
+
+    .menu__lista {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      font-weight: $tamano-fuente;
+
+      .menu__lista-link {
+        font-size: 25px;
+        color: $color-fuente;
+        text-decoration: none;
+        margin: 10px;
+
+      &:hover {
+        color: darken($color-fuente, 60%);
+        // color: black;
+        }
+
+      &.active {
+        color: darken($color-fuente, 60%);
+        }
+      }
+      
+      
+    }
+  }
+}
+
+
+// ESTILOS PARA SECCION NOSOTROS
+
+#nosotros {
+  width: 100%;
+  height: 80%;
+  margin: 50px 5px;
+
+  .titulo__principal {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .enfasis {
+    @include enfasis(30px)
+  }
+
+  p{
+    text-align: justify;
+    font-size: $tamano-fuente;
+    margin: 25px;
+  }
+
+  .boton__ver{
+    @include boton(#3a3636, 1px);
+    margin-left: 45%;
+  }
+}
+
+// ESTILOS SECCION DE BUSQUEDA PERSONAJE DEMON SLAYER
+
+#demonSlayer {
+  width: 100wh;
+  height: 80%;
+  margin: 20px;
+  background-color: #3a3636;
+  padding: 10px;
+
+  h2 {
+    text-align: center;
+    margin: 30px 20px;
+  }
+
+  form, fieldset {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  #buscar {
+    border: 0;
+    height: 25px;
+    width: 80%;
+    border-radius: 10px;
+
+    &:focus{
+      cursor: auto;
+    }
+  }
+
+  .buscar__personaje{
+    @include boton(#46070e, 1px);
+    margin-left: 45%;
+  }
+}
+
+// ESTILOS DE LA SECCION DE CONTACTO 
+
+#contacto {
+  width: 100%;
+  height: 80%;
+
+  h2 {
+    text-align: center;
+    margin: 30px 20px;
+  }
+
+  .container {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .tanjiro {
+    width: 180px;
+    height: 200px;
+    margin: -25px;
+  }
+
+  form {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+
+    label {
+      font-size: 20px;
+    }
+
+    input, textarea {
+      border: 0;
+      height: 25px;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    .boton__enviar {
+      @include boton(#3a3636, 1px);
+    }
+  }
+}
+
+// ESTILOS PARA EL FOOTER
+
+footer {
+  background: #3a3636;
+  text-align: center;
+  height: 30px;
+
+  h3 {
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+  }
+}
